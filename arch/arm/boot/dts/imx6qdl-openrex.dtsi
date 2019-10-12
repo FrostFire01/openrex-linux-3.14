@@ -54,11 +54,11 @@
 			retain-state-suspended;
 		};
 	};
-
+/*
 	memory: memory {
 		reg = <0x10000000 0x40000000>;
 	};
-
+*/
 	regulators {
 		compatible = "simple-bus";
 		#address-cells = <1>;
@@ -91,7 +91,6 @@
 			gpio = <&gpio4 10 0>;
 			enable-active-high;
 		};
-
 		reg_mipi_dsi_pwr_on: mipi_dsi_pwr_on {
 			compatible = "regulator-fixed";
 			regulator-name = "mipi_dsi_pwr_on";
